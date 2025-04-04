@@ -11,7 +11,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        return pd.read_csv(r"D:\Data since\Epsilon AI\DSP\mid_project\food_delivery_10_years_cleaned.csv")  # Using relative path
+        return pd.read_csv(r"food_delivery_10_years_cleaned.csv")  # Using relative path
     except FileNotFoundError:
         st.error("Error: Data file not found! Please ensure 'food_delivery_10_years_cleaned.csv' is in the same directory.")
         return None
